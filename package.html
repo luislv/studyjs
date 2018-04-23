@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<input type="text" id="J_input">
+<script type="text/javascript">
+//    $(function(){
+//        var input = $('#J_input');
+//        function getNum(){
+//            var num = input.val().length;
+//            return num;
+//        }
+//        //渲染元素
+//        function render(){
+//            var num = getNum();
+//            var numRus = $("#numRes").length;
+//            if(numRus == 0){
+//                input.after("<span id='numRes'></span>");
+//            }
+//            $("#numRes").html(num+"个字");
+//        }
+//        //监听
+//        input.on("keyup",function(){
+//            render()
+//        });
+//        //初始化
+//        render();
+//    });
+    var textCount = {
+        input:null,
+        init:function(config){
+            this.input = $(config.id);
+            this.bind();
+            //这边范围对应的对象，可以实现链式调用
+            return this;
+        },
+        bind:function() {
+            var self = this;
+            this.input.on("keyup", function () {
+                self.render();
+            })
+        },
+        render:function(){//初始化
+            var num = this.getNum();
+            var numRus = $("#numRes").length;
+            if(numRus == 0){
+                this.input.after("<span id='numRes'></span>");
+            }
+            $("#numRes").html(num+"个字");
+        },
+        getNum:function(){
+            var num = this.input.val().length;
+            return num;
+        }
+    };
+    $(function(){
+        textCount.init({id:"#J_input"}).render();
+    })
+</script>
+</body>
+</html>

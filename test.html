@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+</head>
+<body>
+<div Id="hello"></div>
+<div Id="hi"></div>
+<script type="text/javascript">
+window.onload = function() {
+    //利用script标签的src不跨域来解决不同域名之间的跨域问题
+    //https://www.baidu.com/home/msg/data/personalcontent?callback=jQuery110208435623200627875_1523288475756&num=8&_req_seqid=&sid=&_=1523288475757
+    var baiduUrl = 'http://hq.sinajs.cn/list=sh601006';
+
+    function createJs(sUrl) {
+        console.log(111);
+        console.log(sUrl);
+        var oScript = document.createElement("script");
+        var oHead = document.getElementsByTagName("head")[0];
+        oScript.type = "text/javascript";
+        oScript.src = sUrl;
+        oHead.appendChild(oScript);
+    }
+    ;
+    createJs(baiduUrl);
+    function hq_str_sh601006(json) {
+        console.log(json);
+//     console.log(JSON.parse(json));
+        console.log(JSON.stringify(json));
+    }
+}
+    console.log(Math.round(4.51));
+</script>
+<!--<script type="text/javascript" src="https://www.baidu.com/home/msg/data/personalcontent?callback=jQuery110208435623200627875_1523288475756&num=8&_req_seqid=&sid=&_=1523288475757"></script>-->
+
+</body>
+</html>

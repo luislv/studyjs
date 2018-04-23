@@ -1,0 +1,1337 @@
+﻿<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js常用属性方法及兼容性</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel='stylesheet prefetch' href='css/foundation.css'>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!--[if IE]>
+		<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="htmleaf-container">
+		
+		<div class="htmleaf-content bgcolor-3">
+			<!-- This is mtree list -->
+			<ul class=mtree>
+			  <li><a href="#">Javascript对象</a>
+			    <ul>
+			      <li><a href="#">Array</a>
+				  	<ul>
+						<li><a href="#">Property</a>
+							<ul>
+								<li><a href="#">
+									<span class="sp1">constructor</span>
+									<span class="sp2">返回创建数组对象的原型函数。</span>
+									<span class="sp3">all</span>
+									</a>
+								</li>
+								<li><a href="#">
+									<span class="sp1">length</span>
+									<span class="sp2">设置或返回数组元素的个数。</span>
+									<span class="sp3">all</span>
+								 	</a>
+								</li>
+								<li><a href="#">
+									<span class="sp1">prototype</span>
+									<span class="sp2">允许你向数组对象添加属性或方法。</span>
+									<span class="sp3">all</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Methods</a>
+							<ul>
+								<li><a href="#">
+									<span class="sp1">concat()</span>
+									<span class="sp2">连接两个或更多的数组，并返回结果。</span>
+									<span class="sp3">all</span>
+									</a>
+								</li>
+								<li><a href="#">
+									<span class="sp1">copyWithin()</span>
+									<span class="sp2">从数组的指定位置拷贝元素到数组的另一个指定位置中。</span>
+									<span class="sp3">ch45+,ie12+,ff32+,sf9+,op32+</span>
+									</a>
+								</li>
+								<li><a href="#">
+									<span class="sp1">every()</span>
+									<span class="sp2">检测数值元素的每个元素是否都符合条件。</span>
+									<span class="sp3">ie9+,ff1.5+</span>
+									</a>
+								</li>
+								<li><a href="#">
+									<span class="sp1">fill()</span>
+									<span class="sp2">使用一个固定值来填充</span>
+									<span class="sp3">ch45+,ie12+,ff31+,sf7.1+,op32+</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">filter()</span>
+										<span class="sp2">检测数值元素，并返回符合条件所有元素的数组。</span>
+										<span class="sp3">ie9+,ff1.5+</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">find()</span>
+										<span class="sp2">方法返回通过测试（函数内判断）的数组的第一个元素的值。</span>
+										<span class="sp3">ch45+,ie12+,ff25+,sf7.1+,op32+</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">findIndex()</span>
+										<span class="sp2">方法返回通过测试（函数内判断）的数组的第一个元素的索引值</span>
+										<span class="sp3">ch45+,ie12+,ff31+,sf7.1+,op32+</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">forEach()</span>
+										<span class="sp2">方法用于调用数组的每个元素，并将元素传递给回调函数。</span>
+										<span class="sp3">ie9+,ff1.5+</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">includes()</span>
+										<span class="sp2">判断一个数组是否包含一个指定的值。</span>
+										<span class="sp3">ch47+,ie14+,ff43+,sf9+,op34+</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">indexOf()</span>
+										<span class="sp2">搜索数组中的元素,并返回它所在位置索引值</span>
+										<span class="sp3">all</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">join()</span>
+										<span class="sp2">把数组中所有元素转换为一个字符串,元素是通过指定的分隔符进行分隔的。</span>
+										<span class="sp3">all</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">lastIndexOf()</span>
+										<span class="sp2">返回一个指定的字符串值最后出现的位置，在一个字符串中的指定位置从后向前搜索。</span>
+										<span class="sp3">all</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">map()</span>
+										<span class="sp2">通过指定函数处理数组的每个元素，并返回处理后的数组。</span>
+										<span class="sp3">ie9+,ff1.5+</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">pop()</span>
+										<span class="sp2">删除数组最后一个元素,并返回删除的这个数组元素值</span>
+										<span class="sp3">all</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">push()</span>
+										<span class="sp2">在数组末尾添加一个元素,并返回新长度的数组</span>
+										<span class="sp3">all</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">reduce()</span>
+										<span class="sp2">接收一个函数作为累加器，数组中的每个值（从左到右）开始缩减，最终计算为一个值。</span>
+										<span class="sp3">ie9+,ff3+,sf4+,op10.5+</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">reduceRight()</span>
+										<span class="sp2">和reduce() 功能是一样的，不同的是 reduceRight() 从数组的末尾向前将数组中的数组项做累加。</span>
+										<span class="sp3">ie9+,ff3+,sf4+,op10.5+</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">reverse()</span>
+										<span class="sp2">用于颠倒数组中元素的排列顺序</span>
+										<span class="sp3">all</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">shift()</span>
+										<span class="sp2">把数组的第一个元素从其中删除，并返回删除的这个数组元素值.</span>
+										<span class="sp3">all</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">slice()</span>
+										<span class="sp2">从已有的数组中返回选定的元素。该方法可提取字符串的某个部分，并以新的字符串返回被提取的部分。不改变原数组</span>
+										<span class="sp3">all</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">slice()</span>
+										<span class="sp2">用于检测数组中的元素是否满足指定条件（函数提供）。该方法会一次执行数组的每个元素</span>
+										<span class="sp3">ie9+,ff1.5+</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">sort()</span>
+										<span class="sp2">方法用于对数组的元素进行排序。排序顺序可以是字母或数字，并按升序或降序。默认排序顺序为按字母升序。</span>
+										<span class="sp3">all</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">splice()</span>
+										<span class="sp2">方法用于插入、删除或替换数组的元素。</span>
+										<span class="sp3">all</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">toString()</span>
+										<span class="sp2">方法可把数组转换为字符串，并返回结果。</span>
+										<span class="sp3">all</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">unshift()</span>
+										<span class="sp2">可向数组的开头添加一个或更多元素，并返回新的长度。</span>
+										<span class="sp3">all</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sp1">valueOf()</span>
+										<span class="sp2">valueOf()方法返回Array对象的原始值。该原始值由Array对象派生的所有对象继承。该方法通常由js在后台自动调用，并不显式地出现在代码中。</span>
+										<span class="sp3">all</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				  </li>
+			      <li><a href="#">Boolean</a>
+						  <ul>
+							  <li><a href="#">Property</a>
+								  <ul>
+								  <li>
+									  <a href="#">
+									  <span class="sp1">constructor</span>
+									  <span class="sp2">返回创建数组对象的原型函数。</span>
+									  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+									  <span class="sp1">prototype</span>
+									  <span class="sp2">允许你向数组对象添加属性或方法。</span>
+									  <span class="sp3">all</span>
+									  </a>
+								  </li>
+
+								  </ul>
+							  </li>
+							  <li><a href="#">Methods</a>
+								  <ul>
+									  <li>
+										  <a href="#">
+											  <span class="sp1">toString()</span>
+											  <span class="sp2">方法可把一个逻辑值转换为字符串，并返回结果。</span>
+											  <span class="sp3">all</span>
+										  </a>
+									  </li>
+									  <li>
+										  <a href="#">
+											  <span class="sp1">valueOf()</span>
+											  <span class="sp2">方法可返回 Boolean 对象的原始值。</span>
+											  <span class="sp3">all</span>
+										  </a>
+									  </li>
+
+								  </ul>
+							  </li>
+						  </ul>
+				  </li>
+			      <li><a href="#">Date</a>
+					  <ul>
+						  <li><a href="#">Property</a>
+							  <ul>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">constructor</span>
+										  <span class="sp2">返回创建数组对象的原型函数。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">prototype</span>
+										  <span class="sp2">允许你向数组对象添加属性或方法。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+
+							  </ul>
+						  </li>
+						  <li><a href="#">Methods</a>
+							  <ul>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getDate()</span>
+										  <span class="sp2">从 Date 对象返回一个月中的某一天 (1 ~ 31)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getDay()</span>
+										  <span class="sp2">从 Date 对象返回一周中的某一天 (0 ~ 6)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getFullYear()</span>
+										  <span class="sp2">从 Date 对象以四位数字返回年份。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getHours()</span>
+										  <span class="sp2">返回 Date 对象的小时 (0 ~ 23)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getMilliseconds()</span>
+										  <span class="sp2">返回 Date 对象的毫秒(0 ~ 999)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getMinutes()</span>
+										  <span class="sp2">返回 Date 对象的分钟 (0 ~ 59)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getMonth()</span>
+										  <span class="sp2">从 Date 对象返回月份 (0 ~ 11)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getSeconds()</span>
+										  <span class="sp2">返回 Date 对象的秒数 (0 ~ 59)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getTime()</span>
+										  <span class="sp2">返回 1970 年 1 月 1 日至今的毫秒数。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getTimezoneOffset()</span>
+										  <span class="sp2">返回本地时间与格林威治标准时间 (GMT) 的分钟差。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getUTCDate()</span>
+										  <span class="sp2">根据世界时从 Date 对象返回月中的一天 (1 ~ 31)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getUTCDay()</span>
+										  <span class="sp2">根据世界时从 Date 对象返回周中的一天 (0 ~ 6)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getUTCFullYear()</span>
+										  <span class="sp2">根据世界时从 Date 对象返回四位数的年份。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getUTCHours()</span>
+										  <span class="sp2">根据世界时返回 Date 对象的小时 (0 ~ 23)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getUTCMilliseconds()</span>
+										  <span class="sp2">根据世界时返回 Date 对象的毫秒(0 ~ 999)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getUTCMinutes()</span>
+										  <span class="sp2">根据世界时返回 Date 对象的分钟 (0 ~ 59)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getUTCMonth()</span>
+										  <span class="sp2">根据世界时从 Date 对象返回月份 (0 ~ 11)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">getUTCSeconds()</span>
+										  <span class="sp2">根据世界时返回 Date 对象的秒钟 (0 ~ 59)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">parse()</span>
+										  <span class="sp2">返回1970年1月1日午夜到指定日期（字符串）的毫秒数。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setDate()</span>
+										  <span class="sp2">设置 Date 对象中月的某一天 (1 ~ 31)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setFullYear()</span>
+										  <span class="sp2">设置 Date 对象中的年份（四位数字）。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setHours()</span>
+										  <span class="sp2">设置 Date 对象中的小时 (0 ~ 23)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setMilliseconds()</span>
+										  <span class="sp2">设置 Date 对象中的毫秒 (0 ~ 999)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setMinutes()</span>
+										  <span class="sp2">设置 Date 对象中的分钟 (0 ~ 59)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setMonth()</span>
+										  <span class="sp2">设置 Date 对象中月份 (0 ~ 11)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setSeconds()</span>
+										  <span class="sp2">设置 Date 对象中的秒钟 (0 ~ 59)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setTime()</span>
+										  <span class="sp2">setTime() 方法以毫秒设置 Date 对象。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setUTCDate()</span>
+										  <span class="sp2">根据世界时设置 Date 对象中月份的一天 (1 ~ 31)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setUTCFullYear()</span>
+										  <span class="sp2">根据世界时设置 Date 对象中的年份（四位数字）。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setUTCHours()</span>
+										  <span class="sp2">根据世界时设置 Date 对象中的小时 (0 ~ 23)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setUTCMilliseconds()</span>
+										  <span class="sp2">根据世界时设置 Date 对象中的毫秒 (0 ~ 999)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setUTCMinutes()</span>
+										  <span class="sp2">根据世界时设置 Date 对象中的分钟 (0 ~ 59)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setUTCMonth()</span>
+										  <span class="sp2">根据世界时设置 Date 对象中的月份 (0 ~ 11)。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">setUTCSeconds()</span>
+										  <span class="sp2">setUTCSeconds() 方法用于根据世界时 (UTC) 设置指定时间的秒字段。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toDateString()</span>
+										  <span class="sp2">把 Date 对象的日期部分转换为字符串。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toISOString()</span>
+										  <span class="sp2">使用 ISO 标准返回字符串的日期格式。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toJSON()</span>
+										  <span class="sp2">以 JSON 数据格式返回日期字符串。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toLocaleDateString()</span>
+										  <span class="sp2">根据本地时间格式，把 Date 对象的日期部分转换为字符串。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toLocaleTimeString()</span>
+										  <span class="sp2">根据本地时间格式，把 Date 对象的时间部分转换为字符串。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toLocaleString()</span>
+										  <span class="sp2">据本地时间格式，把 Date 对象转换为字符串。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toString()</span>
+										  <span class="sp2">把 Date 对象转换为字符串。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toTimeString()</span>
+										  <span class="sp2">把 Date 对象的时间部分转换为字符串。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toUTCString()</span>
+										  <span class="sp2">根据世界时，把 Date 对象转换为字符串。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">UTC()</span>
+										  <span class="sp2">根据世界时返回 1970 年 1 月 1 日 到指定日期的毫秒数。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">valueOf()</span>
+										  <span class="sp2">返回 Date 对象的原始值。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+							  </ul>
+						  </li>
+					  </ul>
+				  </li>
+			      <li><a href="#">Math</a>
+					  <ul>
+						  <li><a href="#">Property</a>
+							  <ul>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">E</span>
+										  <span class="sp2">返回算术常量 e，即自然对数的底数（约等于2.718）。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">LN2</span>
+										  <span class="sp2">返回 2 的自然对数（约等于0.693）。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">LN10</span>
+										  <span class="sp2">返回 2 的自然对数（约等于0.693）。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">LOG2E</span>
+										  <span class="sp2">返回以 2 为底的 e 的对数（约等于 1.414）。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">LOG10E</span>
+										  <span class="sp2">返回以 10 为底的 e 的对数（约等于0.434）。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">PI</span>
+										  <span class="sp2">返回圆周率（约等于3.14159）。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">SQRT1_2</span>
+										  <span class="sp2">返回返回 2 的平方根的倒数（约等于 0.707）。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">SQRT2</span>
+										  <span class="sp2">返回 2 的平方根（约等于 1.414）。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+							  </ul>
+						  </li>
+						  <li><a href="#">Methods</a>
+							  <ul>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">abs(x)</span>
+										  <span class="sp2">返回 x 的绝对值。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">acos(x)</span>
+										  <span class="sp2">返回 x 的反余弦值。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">asin(x)</span>
+										  <span class="sp2">返回 x 的反正弦值。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">atan(x)</span>
+										  <span class="sp2">以介于 -PI/2 与 PI/2 弧度之间的数值来返回 x 的反正切值。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">atan2(y,x)</span>
+										  <span class="sp2">返回从 x 轴到点 (x,y) 的角度（介于 -PI/2 与 PI/2 弧度之间）。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">exp(x)</span>
+										  <span class="sp2">返回 Ex 的指数。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">ceil(x)</span>
+										  <span class="sp2">对x进行上舍入。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">floor(x)</span>
+										  <span class="sp2">对x进行下舍入。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">log(x)</span>
+										  <span class="sp2">返回数的自然对数（底为e）。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">max(x,y,z,...,n)</span>
+										  <span class="sp2">返回 x,y,z,...,n 中的最高值。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">mx(x,y,z,...,n)</span>
+										  <span class="sp2">返回 x,y,z,...,n 中的最高低值。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">pow(x,y)</span>
+										  <span class="sp2">返回 x 的 y 次幂。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">random()</span>
+										  <span class="sp2">返回0-1之间的随机数</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">round(x)</span>
+										  <span class="sp2">把数四舍五入为最近的整数</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">sqrt(x)</span>
+										  <span class="sp2">平方根</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">cos(x)</span>
+										  <span class="sp2">返回数的余弦。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">sin(x)</span>
+										  <span class="sp2">返回数的正铉。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">cos(x)</span>
+										  <span class="sp2">返回数的正切。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+							  </ul>
+						  </li>
+					  </ul>
+				  </li>
+			      <li><a href="#">Number</a>
+					  <ul>
+						  <li><a href="#">Property</a>
+							  <ul>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">constructor</span>
+										  <span class="sp2">返回对创建此对象的 Number 函数的引用。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">MAX_VALUE</span>
+										  <span class="sp2">可表示的最大的数。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">MIN_VALUE</span>
+										  <span class="sp2">可表示的最小的数。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">NEGATIVE_INFINITY</span>
+										  <span class="sp2">负无穷大，溢出时返回该值。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">NaN</span>
+										  <span class="sp2">非数字值。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">POSITIVE_INFINITY</span>
+										  <span class="sp2">正无穷大，溢出时返回该值。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">prototype</span>
+										  <span class="sp2">允许您有能力向对象添加属性和方法。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+
+							  </ul>
+						  </li>
+						  <li><a href="#">Methods</a>
+							  <ul>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toExponential(x)</span>
+										  <span class="sp2">把对象的值转换为指数计数法。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toFixed(x)</span>
+										  <span class="sp2">把数字转换为字符串，结果的小数点后有指定位数的数字。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toPrecision(x)</span>
+										  <span class="sp2">把数字格式化为指定的长度。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toString()</span>
+										  <span class="sp2">把数字转换为字符串，使用指定的基数。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">valueOf()</span>
+										  <span class="sp2">返回一个 Number 对象的基本数字值。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+
+							  </ul>
+						  </li>
+					  </ul>
+				  </li>
+			      <li><a href="#">String</a>
+					  <ul>
+						  <li><a href="#">Property</a>
+							  <ul>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">constructor</span>
+										  <span class="sp2">返回对创建此对象的引用。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">length</span>
+										  <span class="sp2">字符串长度</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">prototype</span>
+										  <span class="sp2">允许您有能力向对象添加属性和方法。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+
+							  </ul>
+						  </li>
+						  <li><a href="#">Methods</a>
+							  <ul>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">charAt()</span>
+										  <span class="sp2">返回指定位置(索引值)的字符</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">charCodeAt()</span>
+										  <span class="sp2">返回在指定的位置的字符的 Unicode 编码。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">concat()</span>
+										  <span class="sp2">链接两个或更多的字符串,返回新的字符串</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">fromCharCode()</span>
+										  <span class="sp2">将 Unicode 编码转为字符。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">indexOf()</span>
+										  <span class="sp2">返回某个指定的字符串值在字符串中首次出现的位置。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">lastIndexOf()</span>
+										  <span class="sp2">从后向前搜索字符串，并从起始位置（0）开始计算返回字符串最后出现的位置。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">match()</span>
+										  <span class="sp2">查找找到一个或多个正则表达式的匹配。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">replace()</span>
+										  <span class="sp2">在字符串中查找匹配的子串， 并替换与正则表达式匹配的子串。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">search()</span>
+										  <span class="sp2">查找与正则表达式相匹配的值。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">slice()</span>
+										  <span class="sp2">提取字符串的片断，并在新的字符串中返回被提取的部分。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">split()</span>
+										  <span class="sp2">把字符串分割为字符串数组。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">substr()</span>
+										  <span class="sp2">从起始索引号提取字符串中指定数目的字符。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">substring()</span>
+										  <span class="sp2">提取字符串中两个指定的索引号之间的字符。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toLowerCase()</span>
+										  <span class="sp2">把字符串转换为小写。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">toUpperCase()</span>
+										  <span class="sp2">把字符串转换为大写。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">trim()</span>
+										  <span class="sp2">去除字符串两边空白</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">valueOf()</span>
+										  <span class="sp2">返回某个字符串对象原始值</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+
+							  </ul>
+						  </li>
+						  <li><a href="#">String Html 包装方法</a>
+							  <ul>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">anchor()</span>
+										  <span class="sp2">创建Html锚</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">
+										  <span class="sp1">big()</span>
+										  <span class="sp2">方法用于把字符串显示为大号字体。</span>
+										  <span class="sp3">all</span>
+									  </a>
+								  </li>
+								  <li>
+									  <a href="#">....还有更多包装方法.详情见文档
+									  </a>
+								  </li>
+							  </ul>
+
+						  </li>
+					  </ul>
+				  </li>
+			      <li><a href="#">RegExp(正则)</a></li>
+			      <li><a href="#">Global</a></li>
+			      <li><a href="#">运算符</a></li>
+			    </ul>
+			  </li>
+			  <li><a href="#">Borwser对象</a>
+			    <ul>
+			      <li><a href="#">Window</a>
+			        <ul>
+			          <li><a href="#">Canada</a></li>
+			          <li><a href="#">USA</a>
+			            <ul>
+			              <li><a href="#">New York</a></li>
+			              <li><a href="#">California</a>
+			                <ul>
+			                  <li><a href="#">Los Angeles</a></li>
+			                  <li><a href="#">San Diego</a></li>
+			                  <li><a href="#">Sacramento</a></li>
+			                  <li><a href="#">San Francisco</a></li>
+			                  <li><a href="#">Bakersville</a></li>
+			                </ul>
+			              </li>
+			              <li><a href="#">Lousiana</a></li>
+			              <li><a href="#">Texas</a></li>
+			              <li><a href="#">Nevada</a></li>
+			              <li><a href="#">Montana</a></li>
+			              <li><a href="#">Virginia</a></li>
+			            </ul>
+			          </li>
+			        </ul>
+			      </li>
+			      <li><a href="#">Navigator</a>
+			        <ul>
+			          <li><a href="#">Mexico</a></li>
+			          <li><a href="#">Honduras</a></li>
+			          <li><a href="#">Guatemala</a></li>
+			         </ul>
+			      </li>
+			      <li><a href="#">Screen</a>
+			        <ul>
+			          <li><a href="#">Brazil</a></li>
+			          <li><a href="#">Argentina</a></li>
+			          <li><a href="#">Uruguay</a></li>
+			          <li><a href="#">Chile</a></li>
+			        </ul>
+			      </li>
+					<li><a href="#">History</a>
+						<ul>
+							<li><a href="#">Brazil</a></li>
+							<li><a href="#">Argentina</a></li>
+							<li><a href="#">Uruguay</a></li>
+							<li><a href="#">Chile</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Location</a>
+						<ul>
+							<li><a href="#">Brazil</a></li>
+							<li><a href="#">Argentina</a></li>
+							<li><a href="#">Uruguay</a></li>
+							<li><a href="#">Chile</a></li>
+						</ul>
+					</li>
+			    </ul>
+			  </li>
+			  <li><a href="#">Dom对象</a>
+			    <ul>
+					<li><a href="#">Document对象</a>
+						<ul>
+							<li><a href="#">Brazil</a></li>
+							<li><a href="#">Argentina</a></li>
+							<li><a href="#">Uruguay</a></li>
+							<li><a href="#">Chile</a></li>
+						</ul>
+					</li>
+					<li><a href="#">元素对象</a>
+						<ul>
+							<li><a href="#">Brazil</a></li>
+							<li><a href="#">Argentina</a></li>
+							<li><a href="#">Uruguay</a></li>
+							<li><a href="#">Chile</a></li>
+						</ul>
+					</li>
+					<li><a href="#">属性对象</a>
+						<ul>
+							<li><a href="#">Brazil</a></li>
+							<li><a href="#">Argentina</a></li>
+							<li><a href="#">Uruguay</a></li>
+							<li><a href="#">Chile</a></li>
+						</ul>
+					</li>
+					<li><a href="#">事件对象</a>
+						<ul>
+							<li><a href="#">Brazil</a></li>
+							<li><a href="#">Argentina</a></li>
+							<li><a href="#">Uruguay</a></li>
+							<li><a href="#">Chile</a></li>
+						</ul>
+					</li>
+			   </ul>
+			  </li>
+			</ul>
+		</div>
+	</div>
+	
+	<script src='js/stopExecutionOnTimeout.js?t=1'></script>
+	<script src='http://www.jq22.com/jquery/jquery-1.10.2.js'></script>
+	<script src='js/jquery.velocity.min.js'></script>
+	<script>
+	;(function ($, window, document, undefined) {
+	    if ($('ul.mtree').length) {
+	        var collapsed = true;
+	        var close_same_level = false;
+	        var duration = 400;
+	        var listAnim = true;
+	        var easing = 'easeOutQuart';
+	        $('.mtree ul').css({
+	            'overflow': 'hidden',
+	            'height': collapsed ? 0 : 'auto',
+	            'display': collapsed ? 'none' : 'block'
+	        });
+	        var node = $('.mtree li:has(ul)');
+	        node.each(function (index, val) {
+	            $(this).children(':first-child').css('cursor', 'pointer');
+	            $(this).addClass('mtree-node mtree-' + (collapsed ? 'closed' : 'open'));
+	            $(this).children('ul').addClass('mtree-level-' + ($(this).parentsUntil($('ul.mtree'), 'ul').length + 1));
+	        });
+	        $('.mtree li > *:first-child').on('click.mtree-active', function (e) {
+	            if ($(this).parent().hasClass('mtree-closed')) {
+	                $('.mtree-active').not($(this).parent()).removeClass('mtree-active');
+	                $(this).parent().addClass('mtree-active');
+	            } else if ($(this).parent().hasClass('mtree-open')) {
+	                $(this).parent().removeClass('mtree-active');
+	            } else {
+	                $('.mtree-active').not($(this).parent()).removeClass('mtree-active');
+	                $(this).parent().toggleClass('mtree-active');
+	            }
+	        });
+	        node.children(':first-child').on('click.mtree', function (e) {
+	            var el = $(this).parent().children('ul').first();
+	            var isOpen = $(this).parent().hasClass('mtree-open');
+	            if ((close_same_level || $('.csl').hasClass('active')) && !isOpen) {
+	                var close_items = $(this).closest('ul').children('.mtree-open').not($(this).parent()).children('ul');
+	                if ($.Velocity) {
+	                    close_items.velocity({ height: 0 }, {
+	                        duration: duration,
+	                        easing: easing,
+	                        display: 'none',
+	                        delay: 100,
+	                        complete: function () {
+	                            setNodeClass($(this).parent(), true);
+	                        }
+	                    });
+	                } else {
+	                    close_items.delay(100).slideToggle(duration, function () {
+	                        setNodeClass($(this).parent(), true);
+	                    });
+	                }
+	            }
+	            el.css({ 'height': 'auto' });
+	            if (!isOpen && $.Velocity && listAnim)
+	                el.find(' > li, li.mtree-open > ul > li').css({ 'opacity': 0 }).velocity('stop').velocity('list');
+	            if ($.Velocity) {
+	                el.velocity('stop').velocity({
+	                    height: isOpen ? [
+	                        0,
+	                        el.outerHeight()
+	                    ] : [
+	                        el.outerHeight(),
+	                        0
+	                    ]
+	                }, {
+	                    queue: false,
+	                    duration: duration,
+	                    easing: easing,
+	                    display: isOpen ? 'none' : 'block',
+	                    begin: setNodeClass($(this).parent(), isOpen),
+	                    complete: function () {
+	                        if (!isOpen)
+	                            $(this).css('height', 'auto');
+	                    }
+	                });
+	            } else {
+	                setNodeClass($(this).parent(), isOpen);
+	                el.slideToggle(duration);
+	            }
+	            e.preventDefault();
+	        });
+	        function setNodeClass(el, isOpen) {
+	            if (isOpen) {
+	                el.removeClass('mtree-open').addClass('mtree-closed');
+	            } else {
+	                el.removeClass('mtree-closed').addClass('mtree-open');
+	            }
+	        }
+	        if ($.Velocity && listAnim) {
+	            $.Velocity.Sequences.list = function (element, options, index, size) {
+	                $.Velocity.animate(element, {
+	                    opacity: [
+	                        1,
+	                        0
+	                    ],
+	                    translateY: [
+	                        0,
+	                        -(index + 1)
+	                    ]
+	                }, {
+	                    delay: index * (duration / size / 2),
+	                    duration: duration,
+	                    easing: easing
+	                });
+	            };
+	        }
+	        if ($('.mtree').css('opacity') == 0) {
+	            if ($.Velocity) {
+	                $('.mtree').css('opacity', 1).children().css('opacity', 0).velocity('list');
+	            } else {
+	                $('.mtree').show(200);
+	            }
+	        }
+	    }
+	}(jQuery, this, this.document));
+	$(document).ready(function () {
+	    var mtree = $('ul.mtree');
+	    mtree.wrap('<div class=mtree-demo></div>');
+	    var skins = [
+	        'bubba',
+	        'skinny',
+	        'transit',
+	        'jet',
+	        'nix'
+	    ];
+	    mtree.addClass(skins[0]);
+	    $('body').prepend('<div class="mtree-skin-selector"><ul class="button-group radius"></ul></div>');
+	    var s = $('.mtree-skin-selector');
+	    $.each(skins, function (index, val) {
+	        s.find('ul').append('<li><button class="small skin">' + val + '</button></li>');
+	    });
+	    s.find('ul').append('<li><button class="small csl active">Close Same Level</button></li>'); //active 默认激活 折叠除当前展开以外的菜单
+	    s.find('button.skin').each(function (index) {
+	        $(this).on('click.mtree-skin-selector', function () {
+	            s.find('button.skin.active').removeClass('active');
+	            $(this).addClass('active');
+	            mtree.removeClass(skins.join(' ')).addClass(skins[index]);
+	        });
+	    });
+	    s.find('button:first').addClass('active');
+	    s.find('.csl').on('click.mtree-close-same-level', function () {
+	        $(this).toggleClass('active');
+	    });
+	});
+	</script>
+</body>
+</html>
